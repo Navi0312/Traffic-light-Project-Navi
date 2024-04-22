@@ -1,0 +1,413 @@
+body{
+    background-color:khaki;
+}
+
+
+header{
+    text-align:center;
+    text-decoration:underline;
+    background-color:black;
+    color:white;
+    font-size:60px;
+    font-weight:1000;
+    border-radius:30px;
+    border-style:double;
+    border-color:green;
+    animation:hcolor 10s linear infinite 2s;
+}
+
+@keyframes hcolor{
+    0%{color:white;}
+    50%{color:yellow;}
+    100%{color:green;}
+}
+
+
+.state{
+    margin-top:100px;
+    background-color:black;
+    height:20px;
+    width:70px;
+    position:absolute;
+}
+#lightbox{
+    background-color:black;
+    height:400px;
+    width:200px;
+    margin-left:950px;
+    margin-top:100px;
+    display:inline-block;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+#sharp1{
+   background-color:black;
+   height:70px;
+   width:70px;
+   border-bottom-left-radius:100px;
+   display:inline-block;
+   margin-top:120px;
+   margin-left:880px;
+   position:absolute;
+}
+#sharp2{
+    background-color:black;
+    height:70px;
+    width:70px;
+    border-bottom-left-radius:100px;
+    display:inline-block;
+    margin-top:250px;
+    margin-left:880px;
+    position:absolute;
+ 
+ }
+ #sharp3{
+    background-color:black;
+    height:70px;
+    width:70px;
+    border-bottom-left-radius:100px;
+    display:inline-block;
+    margin-top:380px;
+    margin-left:880px;
+    position:absolute;
+ 
+ }
+
+#sharp4{
+    background-color:black;
+   height:70px;
+   width:70px;
+   border-bottom-right-radius:100px;
+   display:inline-block;
+   margin-top:120px;
+   margin-right:10px;
+   position:absolute;
+}
+#sharp5{
+    background-color:black;
+   height:70px;
+   width:70px;
+   border-bottom-right-radius:100px;
+   display:inline-block;
+   margin-top:250px;
+   margin-right:10px;
+   position:absolute;
+}
+#sharp6{
+    background-color:black;
+   height:70px;
+   width:70px;
+   border-bottom-right-radius:100px;
+   display:inline-block;
+   margin-top:380px;
+   margin-right:10px;
+   position:absolute;
+}
+#stick{
+    background-color:black;
+    height:150px;
+    width:40px;
+    margin-left:1030px;
+    position:absolute;
+    }
+    #c1{
+        background-color:white;
+        height:100px;
+        width:100px;
+        border-radius:60px;
+        margin-left:50px;
+        margin-top:10px;
+        animation-name:redcolor;
+        animation-duration:60s;
+    }
+    @keyframes redcolor{
+        from{background-color:white;}
+        to{background-color:red;}
+    }
+
+    #c2{
+        background-color:white;
+        height:100px;
+        width:100px;
+        border-radius:60px;
+        margin-left:50px;
+        margin-top:30px;
+        animation-name:yellowcolor;
+        animation-duration:10s;
+        animation-delay:60s;
+    }
+    @keyframes yellowcolor{
+        from{background-color:white;}
+        to{background-color:yellow;}
+    }
+
+
+    #c3{
+        background-color:white;
+        height:100px;
+        width:100px;
+        border-radius:60px;
+        margin-left:50px;
+        margin-top:30px;
+        animation-name:greencolor;
+        animation-duration:20s;
+        animation-delay:70s;
+    }
+    @keyframes greencolor{
+        from{background-color:white;}
+        to{background-color:green;}
+    }
+    h1{
+     position:absolute;
+     display:inline-block;
+     margin-top:110px;
+     margin-left:500px;
+     animation:blink1 2s linear 31;
+     background-color:red;
+    }
+    #img1{
+        height:100px;
+        width:100px;
+    }
+    @keyframes blink1{
+        0%{margin-left:500px;
+             opacity:0;}
+        50%{margin-left:520px;
+           opacity:1;
+        }
+        100%{margin-left:530px;
+          opacity:0;
+        }
+    }
+    h2{
+        position:absolute;
+        display:inline-block;
+        margin-top:240px;
+        margin-left:500px;
+        font-size:30px;
+        animation:blink2 2s linear 4 62s ;
+        background-color:yellow;
+        
+    }
+    #img2{
+        height:100px;
+        width:80px;
+    }
+    @keyframes blink2{
+        0%{margin-left:500px;
+             opacity:0;}
+        50%{margin-left:520px;
+           opacity:1;
+        }
+        100%{margin-left:530px;
+          opacity:0;
+        }
+    }
+
+   h3{
+        position:absolute;
+        display:inline-block;
+        margin-top:380px;
+        margin-left:500px;
+        font-size:30px;
+        animation:blink3 2s linear 5 70s;
+        background-color:green;
+    }
+    
+    #img3{
+        height:100px;
+        width:140px;
+    }
+    @keyframes blink3{
+        0%{margin-left:500px;
+             opacity:0;}
+        50%{margin-left:520px;
+           opacity:1;
+        }
+        100%{margin-left:530px;
+          opacity:0;
+        }
+    }
+
+    #stopwatch{
+        position:absolute;
+        display:inline-block;
+        margin-top:100px;
+        margin-left:60px;
+        height:200px;
+        width:200px;
+        background-color:black;
+    }
+    
+    #stopcircle{
+        position:absolute;
+        display:inline-block;
+        margin-top:120px;
+        margin-left:75px;
+        height:170px;
+        width:170px;
+        background-color:black;
+        border-radius:90px;
+    }
+    .element1::before{
+        content:"0";
+        display:inline-block;
+        position:absolute;
+        margin-left:10px;
+        font-size:130px;
+        color:red;
+        animation:clockcolor1 50s 1 8s;
+       }
+       @keyframes clockcolor1{
+        0%{color:red;
+        content:"0";}
+        20%{color:red;
+        content:"1";}
+        40%{color:red;
+        content:"2";}
+        60%{color:red;
+        content:"3";}
+        80%{color:red;
+        content:"4";}
+        100%{color:red;
+        content:"5";}
+        
+}
+.element::before{
+        content:"0";
+        display:inline-block;
+        position:absolute;
+        font-size:130px;
+        margin-left:90px;
+        animation:clockcolor2 10s 8 1s;
+        color:red;
+
+    }
+    @keyframes clockcolor2{
+        0%{color:red;
+        content:"0";}
+        10%{color:red;
+            content:"1";}
+        20%{color:red;
+        content:"2";} 
+        30%{color:red;
+        content:"3";} 
+        40%{color:red;
+        content:"4";} 
+        50%{color:red;
+        content:"5";} 
+        60%{color:red;
+        content:"6";}
+        70%{color:red;
+        content:"7";} 
+        80%{color:red;
+        content:"8";} 
+        90%{color:red;
+        content:"9";} 
+        }
+        .dot::before{
+            content:":";
+            display:inline-block;
+            position:absolute;
+            font-size:100px;
+            animation:dotblink 2s infinite 1s;
+            color:red;
+            margin-top:20px;
+            margin-left:70px;
+        }
+        @keyframes dotblink{
+            0%{color:red;
+            content:":";
+        opacity:0}
+            50%{color:red;
+            content:":";
+        opacity:1}
+            100%{color:red;
+            content:":";
+        opacity:0;}
+}
+
+#car{
+    height:100px;
+    width:200px;
+    background-color:skyblue;
+    position:absolute;
+    display:inline-block;
+    margin-top:520px;
+    margin-right:900px;
+    border-top-right-radius:150px;
+    border-top-left-radius:50px;
+    animation:carslide 20s linear 31;
+}
+
+@keyframes carslide{
+   0%{margin-right:900px;}
+   50%{margin-left:200px;
+     }
+   100%{margin-left:1500px;}
+}
+
+#cartyre1{
+    height:70px;
+    width:70px;
+    border-radius:50px;
+    margin-top:50px;
+    background-color:black;
+    display:inline-block;
+    animation:rotatetyre1 5s infinite ;
+}
+@keyframes rotatetyre1{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+} 
+#cartyre2{
+    height:70px;
+    width:70px;
+    border-radius:50px;
+    margin-top:50px;
+    margin-left:30px;
+    background-color:black;
+    display:inline-block;
+    animation:rotatetyre2 5s infinite 0s;
+}
+@keyframes rotatetyre2{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+
+
+#cline1{
+    height:70px;
+    width:5px;
+    background-color:white;
+    margin-left:30px;
+    rotate:45deg;
+}
+
+#cline2{
+    height:70px;
+    width:5px;
+    background-color:white;
+    margin-right:40px;
+    rotate:90deg;
+}
+#cline3{
+    height:70px;
+    width:5px;
+    background-color:white;
+    margin-left:30px;
+    rotate:45deg;
+}
+#cline4{
+    height:70px;
+    width:5px;
+    background-color:white;
+    margin-right:40px;
+    rotate:90deg;
+}
+footer{
+    background-color:black;
+    height:20px;
+    margin-top:120px;
+}
